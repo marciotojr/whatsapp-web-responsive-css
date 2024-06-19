@@ -36,7 +36,7 @@ To use this CSS snippet, you will need to install a browser extension that allow
    - Open the extension (Stylish or Stylus).
    - Create a new style.
    
-3. **Add the CSS snippet**: Copy and paste the css in `style.css`
+3. **Add the CSS snippet**: Copy and paste the css in [`style.css`](style.css)
 
 4. **Apply the style**: Save and apply the style. The changes should take effect immediately on the WhatsApp Web interface.
 
