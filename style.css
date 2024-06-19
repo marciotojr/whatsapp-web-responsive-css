@@ -1,0 +1,49 @@
+@media (max-width: 747px){
+
+    /* hides the leftmost bar (conversation, status, etc) */
+    #app>div>div:last-child>header
+    { 
+        display: none;
+    }
+
+    /* limits size of conversation list to show only photos */
+    div:has( > #side):not(:hover)
+    { 
+      /* max-width:80px !important; */
+    }
+    
+    
+    /* limits size of conversation list filters */
+    #side div:nth-child(2)
+    { 
+      flex-wrap: nowrap !important;
+      height: 40px
+    }
+    
+    /* limits size of the conversation section */
+    #app>div>div:last-child{ 
+      min-width:unset !important
+    }
+    
+    /* hides new conversation icon */
+    #app>div>div:last-child>div:has( > header > header) > header> header
+    { 
+      display: none !important;
+    }
+    
+    /* shows the green dot notification for unread messages when conversation list is retracted: use the word for "no" in the user language in the place of "não" (check the attribute aria-label of the deepest element that has the number's text inside the green dot notification for unread messages) */
+    div:has( > #side):not(:hover) [role=gridcell]:has([aria-label~="não"]),
+    div:has( > #side):not(:hover) [role=gridcell]:has([aria-label~="Não"])
+    { 
+      display: block;
+      position: relative;
+      left: -36px;
+    }
+    
+    /* hide the pinned messages icon */
+    [data-icon="pinned2"]
+    {
+      display:none;
+    }
+    
+  }
